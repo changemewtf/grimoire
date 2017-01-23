@@ -2,7 +2,7 @@ require "ostruct"
 
 require "grimoire/contracts"
 
-class Object
+class ::Object
   private
 
   def self.smart_variables &block
