@@ -1,3 +1,5 @@
+require "date"
+
 require "grimoire/contract"
 
 module Grimoire
