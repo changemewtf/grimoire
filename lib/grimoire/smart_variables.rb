@@ -7,6 +7,7 @@ class ::Object
 
   def self.smart_variables &block
     Grimoire::SmartVariables.call self, &block
+    nil
   end
 end
 
