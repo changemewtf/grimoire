@@ -1,6 +1,6 @@
 Gem::Specification.new do |gem|
   gem.name    = "grimoire"
-  gem.version = "0.0.2"
+  gem.version = "0.0.3"
   gem.date    = Date.today.to_s
 
   gem.summary = "cantrips and enchantments for general wizardry"
