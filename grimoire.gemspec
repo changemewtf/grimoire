@@ -3,8 +3,8 @@ Gem::Specification.new do |gem|
   gem.version = "0.0.5"
   gem.date    = Date.today.to_s
 
-  gem.summary = "cantrips and enchantments for general wizardry"
-  gem.description = "this gem is an experiment in generalized problem-solving; I wonder if I will regret extracting code into it"
+  gem.summary = "components and patterns for general server-side wizardry"
+  gem.description = "grimoire (n.) /grimˈwɑr/ a manual of magic or witchcraft used by witches and sorcerers."
 
   gem.authors  = ["Max Cantor"]
   gem.email    = "max@maxcantor.net"

@@ -63,6 +63,7 @@ module Grimoire
             when "gray"
               232 + chunks[1].to_i
             else
+              # R G B from 0 to 5
               16 + (chunks[0].to_i * 36) + (chunks[1].to_i * 6) + chunks[2].to_i
             end
 
