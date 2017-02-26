@@ -1,6 +1,6 @@
 Gem::Specification.new do |gem|
   gem.name    = "grimoire"
-  gem.version = "0.0.5"
+  gem.version = "0.0.6"
   gem.date    = Date.today.to_s
 
   gem.summary = "components and patterns for general server-side wizardry"

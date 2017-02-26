@@ -7,15 +7,16 @@ module Grimoire
     def self.call name, &block
       name = name || "data"
       Dir["#{name}/*.yaml"].each do |file|
-        data = YAML.load_file file
         create = -> d { d.respond_to?(:keys) ? DataObject.new(d) : d }
-        data = if data.is_a? Array
-          data.map &create
-        else
-          create.call data
-        end
         key = File.basename(file, ".yaml").to_sym
-        block.call(key) { data }
+        block.call(key) do
+          data = YAML.load_file file
+          if data.is_a? Array
+            data.map &create
+          else
+            create.call data
+          end
+        end
       end
     end
   end

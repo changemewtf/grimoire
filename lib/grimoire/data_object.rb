@@ -16,8 +16,6 @@ module Grimoire
         end
         @attributes[key] = value
       end
-
-      freeze
     end
 
     def_delegators *%i[@attributes each keys values]
